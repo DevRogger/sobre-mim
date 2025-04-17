@@ -93,6 +93,7 @@ main {
 @media (max-width: 768px) {
     main {
         padding: 15px;
+        margin-right: 2%;
     }
 
     .redes {
