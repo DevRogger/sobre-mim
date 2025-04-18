@@ -94,6 +94,7 @@ main {
     main {
         padding: 15px;
         margin-right: 2%;
+        border-radius: 4%;
     }
 
     .redes {
@@ -106,5 +107,14 @@ main {
     .youtube {
         width: 80%;
         margin-bottom: 15px;
+    }
+
+    #titulo{
+        border-radius: 20px 20px 20px 20px;
+        margin-bottom: 10%;
+    }
+
+    h2{
+        margin-top: 10%;
     }
 }
