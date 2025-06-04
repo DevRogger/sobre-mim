@@ -79,19 +79,24 @@ main {
     gap: 20px;
     flex-wrap: wrap;
     margin-top: 20px;
+    
 }
 
-.instagram,
-.youtube {
+#instagram,
+#youtube {
     padding: 20px;
     background-color: #ffffff;
     box-shadow: 6px 4px 1px rgb(255, 196, 0);
     border-radius: 7px;
     flex: 1 1 100px;
     text-align: center;
+    max-width: 30px;
+    font-size: 30px;
+    color: #000000;
 }
 
 /* RESPONSIVIDADE PARA TELAS PEQUENAS */
+
 @media (max-width: 768px) {
     main {
         padding: 15px;
@@ -100,15 +105,16 @@ main {
     }
 
     .redes {
-        flex-direction: column;
-        align-items: center;
-        margin-right: 7%;
+        position: relative;
+        left: -14px;       
     }
 
-    .instagram,
-    .youtube {
+    #instagram,
+    #youtube {
         width: 80%;
-        margin-bottom: 15px;
+        max-height: 30px;
+        margin-left: 20px;
+        text-decoration: none;
     }
 
     #titulo{
