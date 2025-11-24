@@ -15,6 +15,7 @@ body {
     max-width: 100%;
     margin: 40px auto;
     padding: 0 10px;
+    overflow: hidden;
 }
 
 .text-h2 {
@@ -94,6 +95,127 @@ main {
     font-size: 30px;
     color: #000000;
 }
+
+
+/*--------MENU-------*/
+
+.contein {
+
+    position: relative;
+}
+
+.menu {
+    background-color: white;
+    width: 300px;
+    height: 200px;
+    padding: 2%;
+    position: absolute;
+    left: 1400px;
+    border-radius: 20px;
+    box-shadow: 6px 1px 1px 5px rgb(245, 139, 0) ;
+    transform: translate(0%,90%);
+    transition: 1s;
+
+}
+
+.cima {
+    position: relative;
+}
+
+#dentro-cima {
+
+    position: absolute;
+    left: 1560px;
+    font-size: 50px;
+    color: white;
+    transform: translate(0%,260%);
+    transition: 1s;
+    cursor: pointer;
+    opacity: 1;
+}
+
+#dentro-cima:hover {
+    color: #000000;
+}
+
+.baixo {
+    position: relative;
+}
+
+#dentro-baixo {
+
+    left: 1560px;
+    bottom: -30px;
+    font-size: 50px;
+    color: white;
+    position: absolute;
+    cursor: pointer;
+    transition: 1s;
+    opacity: 0;
+}
+
+#dentro-baixo:hover{
+    color: #000000;
+}
+
+#ajuda {
+
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: absolute;
+    cursor: pointer;
+}
+
+#priva {
+
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: pointer;
+}
+
+.fundo-priva {
+
+    background-color: rgba(255, 0, 0, 0);
+    margin-top: 70px;
+
+}
+
+.fundo-ajuda {
+
+    margin-bottom: 40px;
+    background-color: rgba(95, 20, 20, 0);
+    position: relative;
+}
+
+#priva:hover {
+
+    font-size: 40px;
+    transition: 0.1s;
+}
+
+#ajuda:hover {
+
+    font-size: 40px;
+    transition: 0.1s;
+}
+
+.contein.ativar #dentro-baixo {
+   transform: translate(0%, -170%);
+   transition: 1s;
+   opacity: 1;
+}
+
+.contein.ativar .menu {
+    transform: translate(0%,0%);
+    transition: 1s;
+}
+
+.contein.ativar #dentro-cima {
+    transform: translate(0%,-170%);
+    transition: 1s;
+    opacity: 0;
+}
+
 
 /* RESPONSIVIDADE PARA TELAS PEQUENAS */
 
