@@ -4,11 +4,7 @@ var menu = document.querySelector(".menu")
 var baixo = document.querySelector(".baixo")
 
 bortao.addEventListener("click",()=>{
-    contein.classList.toggle("ativar")
-})
-
-menu.addEventListener("click", ()=>{
-    contein.classList.remove("ativar")
+    contein.classList.add("ativar")
 })
 
 baixo.addEventListener("click",()=>{
